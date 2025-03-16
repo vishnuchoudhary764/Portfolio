@@ -1,9 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    scroll-behavior: smooth;
-
-}
+    scroll-behavior: smooth;}
 
 nav {
     background: #222;
@@ -66,8 +64,13 @@ nav a:nth-child(5):hover~span {
     justify-content: center;
     align-items: center;
     font-size: 4rem;
+    background: linear-gradient(to right, #a1c4fd, #c2e9fb);
+    color: #333;
     background-position: center;
     background-size: cover;
+    background-attachment:scroll;
+    z-index:1000;
+   
    
 }
 
@@ -136,8 +139,6 @@ nav a:nth-child(5):hover~span {
 }
 .project{
     margin-top:8rem;
-    
-   
 }
 
 .pj-container {
@@ -149,7 +150,6 @@ nav a:nth-child(5):hover~span {
 }
 
 .box {
-    /* border: 1px solid black; */
     height:250px;
     width:300px;
     position: relative;
@@ -185,9 +185,9 @@ nav a:nth-child(5):hover~span {
     bottom: 0;
 }
 .skills{
+    position: relative;
     margin-top:16rem;
-    margin-bottom:2rem;
-    height:100vh;   
+    margin-bottom:16rem;
 }
 
 .sk-container {
@@ -225,12 +225,14 @@ background-size: cover;
 }
 
 .contact{
-    margin: auto;
-    width:34vw;
-    height:72vh;
+    position: relative;
+    margin:auto;
+    width:40vw;
     border:1px solid grey;
     border-radius:2rem;
     box-shadow:8px 4px 16px;
+    background: linear-gradient(to right, #a1c4fd, #c2e9fb);
+    color: #333;
    
 }
 .form{ 
@@ -244,10 +246,20 @@ background-size: cover;
 input{
     width:26vw;
     height:3rem;
-    border-radius:1.5rem;
+    border-radius:0.8rem;
     border: none;
     cursor: pointer;
-
+    background: linear-gradient(to right, #a1c4fd, #c2e9fb);
+    color: #333;
+}
+.textarea{
+   width:26vw; 
+   height:15vh;
+   border-radius:0.8rem;
+   border: none;
+   cursor: pointer;
+   background: linear-gradient(to right, #a1c4fd, #c2e9fb);
+   color: #333;
 }
 input:hover{
 scale:1.06;
@@ -256,6 +268,7 @@ scale:1.06;
     display: flex;
     justify-content: center;
     margin-top:2.4rem;
+    margin-bottom:2rem;
    
 }
 .sbtn{
@@ -264,28 +277,36 @@ scale:1.06;
     width: 6rem;
     border-radius:2rem;
     border: none;
-    background-color:blue;
+    background-color:rgb(59, 57, 57);
     color:white;
    
 }
 hr{
     margin-top:3rem;
 }
-.end{
-   display: flex;
-     margin-bottom:1.5rem;
+.logos{
+     display: flex;
+     margin-top:1.5rem;
      align-items: center;
      justify-content: space-evenly;
+     flex-wrap: wrap;
+   
 }
-.end img{
+.logos img{
     height:40px;
     width:40px;
     background-position: center;
     background-size: cover;
 }
+.madeby{
+  text-align: center;
+    margin-bottom:1.5rem;
+}
 
-
-@media (max-width:1050px) {
+@media (max-width:750px) {
+    nav a{
+        font-size:0.8rem;
+    }
     nav span {
         width:5rem;
         height: 2.5rem;
@@ -317,7 +338,9 @@ hr{
        
     }
    .home{
-    height:70vh;
+    height:52vh;
+    font-size:1.8rem;
+    background:none;
    }
 .sideimg{
     width: 250px;
@@ -327,13 +350,13 @@ hr{
     flex-basis:90%;
 }
     .contact{
-        width: 80vw;
-        height:50vh;
-
+        width:80vw;
+        min-height:50vh;
     }
     input{
         width:60vw;
     }
+    .textarea{width:60vw;}
     .submit{
         margin-top:3rem;
     }
