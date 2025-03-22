@@ -170,10 +170,10 @@ nav a:nth-child(5):hover~span {
     object-position: center;
     transition: 0.5;
 }
-.box1:hover img {
+.box:hover img {
     transform: scale(1.1);
 }
-.box1-info {
+.box-info {
     position: absolute;
     bottom: -100%;
     left:0;
@@ -184,7 +184,7 @@ nav a:nth-child(5):hover~span {
     transition: 0.5s;
 }
 
-.box1:hover .box1-info {
+.box:hover .box-info {
     bottom: 0;
 }
 .skills{
